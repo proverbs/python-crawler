@@ -17,7 +17,7 @@ handler = request.HTTPCookieProcessor(cookie)
 opener = request.build_opener(handler)
 
 response = opener.open(url, b_data)
-print(response.read())
+print(response.read().decode('utf-8'))
 
 cookie.save(file_name, ignore_discard=True, ignore_expires=True)
 
@@ -25,4 +25,4 @@ cookie.save(file_name, ignore_discard=True, ignore_expires=True)
 t_url = 'http://222.200.182.10/docs/showSelfInformation.php'
 res = opener.open(t_url)
 
-print(res.read())
+print(res.read().decode('utf-8'))
