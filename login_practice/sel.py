@@ -32,7 +32,7 @@ elem_pas = driver.find_element_by_name('passwd')
 elem_code = driver.find_element_by_name('seccode')
 
 elem_usr.send_keys('379548839@qq.com')
-elem_pas.send_keys('xuhao19962009')
+elem_pas.send_keys('xxxxxx') # 保密
 # elem_code.screenshot('code.png')
 
 x = input() # 等待手工输入验证码
