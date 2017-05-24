@@ -22,7 +22,7 @@ from selenium.webdriver.common.keys import Keys
 url_yd = 'https://note.youdao.com/signIn/index.html?&callback=http%3A%2F%2Fnote.youdao.com%2Foldweb' # 旧版界面
 url_ky = 'https://i.kaoyan.com/login?url=http://bbs.kaoyan.com/forum.php'
 
-driver = webdriver.Firefox()
+driver = webdriver.Firefox() # 可替为phantomJS
 driver.get(url_ky)
 
 assert '考研' in driver.title
